@@ -1,0 +1,235 @@
+.leaderboardRoot {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px auto;
+  grid-template-columns: 100%;
+  background: rgb(219, 219, 219);
+}
+
+.leaderboardRoot.custom {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.contentContainer {
+  display: flex;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentPanel {
+  width: 85vw;
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 100%;
+}
+
+.dropDownMenu {
+  display: flex;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formControl {
+  min-width: 580px;
+}
+
+.leaderboardContainer {
+  display: flex;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+}
+
+.leaderboardContent {
+  display: flex;
+  width: 100%;
+  height: 95%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.recordRow {
+  width: 100%;
+  min-height: 8vh;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.recordRow.first {
+  min-height: 13vh;
+  height: 13vh;
+}
+
+.recordRow.second {
+  min-height: 11vh;
+  height: 11vh;
+}
+
+.recordRow.third {
+  min-height: 10vh;
+  height: 10vh;
+}
+
+.recordPosition {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+}
+
+.recordPosition.first {
+  font-size: 6vw;
+  color: gold;
+}
+
+.recordPosition.second {
+  font-size: 4.5vw;
+  color: silver;
+}
+
+.recordPosition.third {
+  font-size: 3.5vw;
+  color: burlywood;
+}
+
+.recordName {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+
+.recordName.first {
+  font-size: 3vw;
+}
+
+.recordName.second {
+  font-size: 2.5vw;
+}
+
+.recordName.third {
+  font-size: 2.3vw;
+}
+
+.recordInfo {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1vw;
+}
+
+.recordInfo.first {
+  font-size: 2vw;
+}
+
+.recordInfo.second {
+  font-size: 1.5vw;
+}
+
+.recordInfo.third {
+  font-size: 1.25vw;
+}
+
+.recordLine {
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  border-bottom: 1px solid black;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+}
+
+.emptyRows {
+  align-self: center;
+  margin: auto;
+  font-size: 5vw;
+  font-style: italic;
+}
+
+.personalRoot {
+  display: flex;
+  width: 100%;
+  height: 33%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.personalLeft {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+.personalRight {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+.personalTitle {
+  font-size: 4vw;
+  font-weight: 800;
+  width: 20%;
+}
+
+.absBack {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2vw;
+  width: 16vw;
+}
+
+.absBack:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.leaderboardRoot.custom .absBack:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+  font-weight: 600;
+}

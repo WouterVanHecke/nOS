@@ -1,0 +1,34 @@
+.optionsPanel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 100%;
+  height: 80%;
+}
+
+.optionsPanel.custom li button:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.options {
+  width: 50%;
+  max-height: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  transition: 0.5s;
+}
+
+.options.down {
+  position: relative;
+  transform: translateY(9vh);
+  transition: 0.5s;
+}

@@ -1,0 +1,45 @@
+.tipRoot {
+  width: 90%;
+  height: 8vh;
+  max-height: 80px;
+  color: white;
+  border-radius: 20px;
+  margin: 1.8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.8vw;
+  font-weight: 600;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  background: -webkit-linear-gradient(rgb(113, 180, 243), rgb(9, 85, 148));
+  padding: 0.3vh 0px;
+}
+
+.tipRoot.custom:hover {
+  cursor: url(../../images/customMouse.cursor.png), auto;
+  background: -webkit-linear-gradient(rgb(113, 122, 243), rgb(18, 9, 148));
+}
+
+.tipRoot:hover {
+  cursor: pointer;
+  background: -webkit-linear-gradient(rgb(113, 122, 243), rgb(18, 9, 148));
+}
+
+.tipRoot p {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.tipRoot .progressBar {
+  width: 80%;
+  height: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: rgb(187, 187, 187);
+}
+
+.progressBar .progress {
+  height: 100%;
+  background: -webkit-linear-gradient(rgb(113, 180, 243), rgb(9, 85, 148));
+}

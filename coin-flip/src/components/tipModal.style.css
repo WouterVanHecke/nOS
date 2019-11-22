@@ -1,0 +1,99 @@
+.tipModal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+  max-width: 500px;
+  height: 60vh;
+  max-height: 600px;
+  background: white;
+  padding-top: 20px;
+  border-radius: 20px;
+  border: black;
+  border-width: 2px;
+  border-style: solid;
+  outline: none;
+}
+
+.tipModal.custom {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.tipModal.custom button:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.tipModal button {
+  width: 18vw;
+  height: 4vw;
+}
+
+.tipModal p {
+  color: #00bfff;
+  font-size: 1vw;
+  margin: 0px;
+}
+
+.tipModal .poison {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.tipModal .poison .tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.tipModal .poison p {
+  color: #00bfff;
+  font-size: 2vw;
+  margin: 20px 0px;
+}
+
+.multi {
+  width: 8vw;
+  height: 8vw;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 4vw;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.bomb {
+  width: 8vw;
+  height: 8vw;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.multi:hover,
+.bomb:hover {
+  background-color: #0083af;
+}
+
+.choiceClicked {
+  background-color: #0083af;
+}
+
+.pay {
+  padding-top: 10px;
+}

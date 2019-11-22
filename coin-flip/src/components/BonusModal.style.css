@@ -1,0 +1,58 @@
+.bonusModal {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  max-width: 800px;
+  height: 30%;
+  background: white;
+  border-radius: 20px;
+  border: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.bonusModal .coins {
+  margin: 0px auto;
+  font-size: 1.5vw;
+  width: 50%;
+}
+
+.bonusModal .special {
+  margin: 0px auto;
+  font-size: 1.5vw;
+  width: 50%;
+}
+
+.next {
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+.special img {
+  height: 6vh;
+  margin: 0px 15px;
+}
+
+.coins img {
+  height: 12vh;
+}
+
+.special,
+.coins {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.bonusModal p {
+  font-size: 1.2vw;
+  font-weight: 800;
+}

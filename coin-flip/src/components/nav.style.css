@@ -1,0 +1,45 @@
+.mainMenu {
+  display: flex;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mainMenu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+.mainMenu ul li {
+  list-style: none;
+  margin: 1.5vw auto;
+}
+
+.mainMenu ul a {
+  text-decoration: none;
+}
+
+li button {
+  width: 20vw;
+  height: 3vw;
+  border-radius: 2.5vw;
+  background: -webkit-linear-gradient(rgb(143, 243, 113), rgb(14, 148, 9));
+}
+
+span {
+  font-size: 1vw;
+}
+
+li button:hover {
+  transform: scale(1.2);
+  background: -webkit-linear-gradient(rgb(143, 243, 113), rgb(54, 180, 197));
+}
+
+.mainMenu.custom li button:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}

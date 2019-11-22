@@ -1,0 +1,21 @@
+.game {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 100px 88%;
+  background: rgb(219, 219, 219);
+}
+
+.game.custom {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.boardPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}

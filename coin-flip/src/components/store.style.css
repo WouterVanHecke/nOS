@@ -1,0 +1,222 @@
+.storeScreen {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px auto;
+  grid-template-columns: 100%;
+  background: rgb(219, 219, 219);
+  position: relative;
+}
+
+.storeScreen.custom {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.storeScreen.custom .btn:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.storeScreen.custom button:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.storeSection {
+  width: 100vw;
+  height: 80%;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.itemSetion {
+  width: 22%;
+  height: 70%;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.icon {
+  height: 10vw;
+  width: 10vw;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.StoreItemTitle {
+  font-size: 2vw;
+  margin-top: 20px;
+}
+
+.buySection {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buySection button {
+  margin: 10px auto;
+  text-transform: capitalize;
+  width: 17vw;
+  height: 3vw;
+  font-size: 1vw;
+}
+
+.buySection.row button {
+  width: 8vw;
+}
+
+.buySection.row span {
+  font-size: 0.8vw;
+}
+
+.buySection.row .row {
+  display: flex;
+  width: 130%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon img {
+  height: 80%;
+}
+
+.icon.rotate img {
+  transform: rotateZ(-45deg);
+}
+
+.selectSP {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+.selectSP button {
+  width: 20px;
+  height: 1vw;
+}
+
+.btn {
+  width: 2.3vw;
+  height: 2.3vw;
+  background: -webkit-linear-gradient(rgb(150, 225, 238), rgb(32, 143, 207));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2vw;
+  font-weight: 800;
+  margin: 0px 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: -webkit-linear-gradient(rgb(113, 122, 243), rgb(18, 9, 148));
+}
+
+.switch {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 12vw;
+  height: 4vh;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.normal,
+.nos {
+  height: 100%;
+  width: 50%;
+  border-radius: 20px 0px 0px 20px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+}
+
+.nos {
+  border-radius: 0px 20px 20px 0px;
+}
+
+.normal:hover,
+.nos:hover {
+  cursor: pointer;
+}
+
+.storeScreen.custom .normal:hover,
+.storeScreen.custom .nos:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.active {
+  background: -webkit-linear-gradient(rgb(113, 180, 243), rgb(9, 85, 148));
+}
+
+.assets {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 8vw;
+  max-width: 160px;
+  height: 3vw;
+}
+
+.formControl {
+  min-width: 7vw !important;
+  max-width: 160px !important;
+  min-height: 3vw !important;
+}
+
+.formControl div {
+  font-size: 1vw;
+}
+
+.absBack {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2vw;
+  width: 16vw;
+}
+
+.absBack:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.storeScreen.custom .absBack:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+  font-weight: 600;
+}

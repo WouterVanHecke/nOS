@@ -1,0 +1,53 @@
+.secondModal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+  max-width: 500px;
+  height: 65vh;
+  max-height: 600px;
+  background: white;
+  padding-top: 3vw;
+  border-radius: 20px;
+  border: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.secondModal.custom {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.secondModal.custom button:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.countdown {
+  padding-top: 1vw;
+  color: #00bfff;
+  font-size: 3vw;
+}
+
+.secondLife {
+  padding-top: 1vw;
+  color: #00bfff;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.pay {
+  padding-top: 3vw;
+}
+
+.pay button {
+  margin-top: 1vw;
+  border-radius: 3vw;
+  color: #00bfff;
+  width: 20vw;
+  height: 3.5vw;
+}

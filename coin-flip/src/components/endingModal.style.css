@@ -1,0 +1,71 @@
+.endModal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-35%, -50%);
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 60%;
+  background: white;
+  padding: 20px 50px;
+  border-radius: 20px;
+  border: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.endModal.custom {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.endModal.custom button:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.endModal button {
+  margin: 0px 20px;
+}
+
+.endModal .message {
+  margin: 25px auto;
+  font-size: 1.6vw;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  width: 20vw;
+  height: 3.5vw;
+  background: -webkit-linear-gradient(rgb(243, 113, 113), rgb(148, 9, 9));
+}
+
+.buttons button:hover {
+  background: -webkit-linear-gradient(rgb(207, 55, 55), rgb(109, 6, 6));
+}
+
+.buttonsRow button {
+  width: 20vw;
+  height: 3.5vw;
+  background: -webkit-linear-gradient(rgb(113, 180, 243), rgb(9, 85, 148));
+}
+
+.buttonsRow button:hover {
+  background: -webkit-linear-gradient(rgb(113, 122, 243), rgb(18, 9, 148));
+}

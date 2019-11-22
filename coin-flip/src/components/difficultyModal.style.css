@@ -1,0 +1,91 @@
+.difficultyModal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  height: 35%;
+  width: 40%;
+  background: white;
+  padding: 20px 50px;
+  border-radius: 20px;
+  border: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.difficultyModal.custom {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.modalTitle {
+  font-weight: 800px;
+  font-size: 2.3vw;
+  margin: 0px;
+}
+
+.modalDescription {
+  font-weight: 400px;
+  font-size: 1.2vw;
+  margin: 0px;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.difficultyButton {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5vh 0px;
+  margin-bottom: 3vh;
+}
+
+.difficultyButton button {
+  background: -webkit-linear-gradient(rgb(113, 180, 243), rgb(9, 85, 148));
+  width: 12vw;
+  height: 4.5vh;
+  font-size: 0.8vw;
+}
+
+.difficultyButton button:hover {
+  background: -webkit-linear-gradient(rgb(161, 202, 240), rgb(37, 12, 179));
+}
+
+.difficultyButton .clicked button {
+  background: -webkit-linear-gradient(rgb(161, 240, 223), rgb(76, 12, 179));
+}
+
+.advanceButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.advanceButtons button {
+  width: 15vw;
+  height: 4.5vh;
+  font-size: 0.8vw;
+  background: -webkit-linear-gradient(rgb(243, 113, 113), rgb(148, 9, 9));
+}
+
+.advanceButtons button:hover {
+  background: -webkit-linear-gradient(rgb(207, 55, 55), rgb(109, 6, 6));
+}
+
+.advanceButtons .leggo button {
+  background: -webkit-linear-gradient(rgb(143, 243, 113), rgb(14, 148, 9));
+}
+
+.advanceButtons .leggo button:hover {
+  background: -webkit-linear-gradient(rgb(143, 243, 113), rgb(54, 180, 197));
+}
+
+.difficultyModal.custom button:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}

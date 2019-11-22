@@ -1,0 +1,56 @@
+.board {
+  width: 85vh;
+  height: 85vh;
+  display: grid;
+  grid-gap: 1.2vw;
+  padding: 20px;
+  transition: 1s;
+}
+
+.tutorialMessages {
+  width: 70%;
+  background: white;
+  border-radius: 20px;
+  padding: 0px 2vw;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  font-size: 2vw;
+  position: relative;
+  transition: 0.5s;
+  top: 15vh;
+}
+
+.tutorialMessages button {
+  width: 15vw;
+  height: 3vw;
+}
+
+.tutorialMessages.custom button:hover {
+  cursor: url(../images/customMouse.cursor.png), auto;
+}
+
+.slideDown {
+  transition: 1s;
+  opacity: 0.2;
+  position: relative;
+  transform: translateY(20vh);
+}
+
+.tutorialMessages.open {
+  transition: 1s;
+  opacity: 1;
+  height: 30vh;
+}
+
+.tutorialMessages button {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+}
+
+.tutorialMessages p {
+  margin: 70px auto !important;
+}
